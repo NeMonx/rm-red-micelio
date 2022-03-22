@@ -1,0 +1,150 @@
+:root{
+    --first-color: #3C729D;
+    --second-color:#AA96C7;
+    --third-color:#FEE79A;
+    --white-color: #E7E1E5;
+    --link-color: #252F63;
+    --light-gray-color: #b7b7a4;
+    --gray-color-primary: #2e2e2e;
+    --gray-complementary-color: #3a3a3a;
+    --font-family: 'Raleway', sans-serif;
+    --font-paragraphs: 1.2rem;
+    --max-width: 1400px;
+    --header-height: 70px;
+    --background: #3C729D;
+    /* Responsive Breakpoints */
+    /* cellphone: 576px;
+    tablets: 758px;
+    desktop: 992px;
+    large-desktop: 1200px;
+    larger-desktop: 1400px; */
+ 
+}
+ 
+/* *** Resets *** */
+html{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 5rem;
+}
+h3{
+    font-size: 4rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+/* *** Utilities *** */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+}
+.background__color{
+    background: var(--first-color);
+}
+
+/* *** Navbar *** */
+.header{
+    background: var(--first-color);
+
+}
+.header__container{
+    padding: 1rem;
+    justify-content: space-between;
+}
+.header__logo{
+    color: var(--white-color);
+    text-transform: capitalize;
+    letter-spacing: 5px;     
+    cursor: pointer;  
+}
+.header__nav{
+    gap: 1rem;
+}
+.header__nav a{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: all 500ms;
+}
+.header__nav a:hover{
+    color: var(--first-color);
+    background: var(--white-color);
+}
+
+/* *** hero section *** */
+.hero{
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.hero__title h1{
+    font-size: 4.5rem;
+    color: var(--white-color);
+    letter-spacing: 2px;
+}
+.hero__title span{
+    font-size: 7rem;
+}
+.hero__description{
+    max-width: var(--max-width);
+    color: var(--light-gray-color);
+    font-size: 1.6rem;
+    text-align: center;
+}
+.hero__socials {
+    gap: 1rem;
+}
+.hero__socials h3{
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: normal;
+}
+.hero__socials a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    transition: all 300ms; 
+}
+.hero__socials a:hover{
+    color: var(--first-color);
+    background: var(--white-color);
+}
+
