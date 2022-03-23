@@ -4,7 +4,7 @@
     --third-color:#FEE79A;
     --white-color: #E7E1E5;
     --link-color: #252F63;
-    --light-gray-color: #b7b7a4;
+    --light-gray-color: #D3D3D3;
     --gray-color-primary: #2e2e2e;
     --gray-complementary-color: #3a3a3a;
     --font-family: 'Raleway', sans-serif;
@@ -78,6 +78,7 @@ li{
 }
 .header__container{
     padding: 0 1rem;
+    line-height: 3rem;
     justify-content: space-between;
 }
 .header__logo h3{
@@ -118,4 +119,113 @@ li{
 .header__nav a:hover{
     background: var(--white-color);
     color: var(--first-color);
+}
+@media screen and (min-width: 1200px) {
+    .header{
+        background: var(--background);
+        height: 10rem;
+    }
+    .header__container{
+        padding: 0 1rem;
+        line-height: 3rem;
+        justify-content: space-between;
+    }
+    .header__menu--btn i{
+        display: none;
+    }
+    .header__nav{
+        flex-direction: row;
+        justify-content: space-between;
+        background: var(--background);
+        position: inherit;
+        max-width: 70%;
+    }
+    .header__nav a{
+        font-size: 2rem;
+        color: var(--white-color);
+        letter-spacing: 1px;
+        font-weight: bold;
+        width: max-content;
+        padding: 1rem;
+        border-radius: 2rem;
+        text-align: center;
+        transition: all 500ms;
+    }
+    .header__nav a:hover{
+        background: var(--white-color);
+        color: var(--first-color);
+    }
+}
+
+/* *** Hero section *** */
+.hero{
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    background: var(--background);
+}
+.hero__title{
+    width: 90%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+.hero__title h1{
+    font-size: 4rem;
+}
+.hero__title span{
+    font-size: 6rem;
+}
+.hero__description{
+    width: 90%;
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: -3rem;
+    text-align: center;
+}
+.hero__description p{
+    font-size: 1.5rem;
+    color: var(--light-gray-color);
+}
+.hero__socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__socials h3{
+    color: var(--white-color);
+    font-weight: normal;
+    font-size: 3rem;
+}
+.hero__socials a i{
+    width: 5rem;
+    height: 5rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    color: var(--white-color);
+    font-size: 3rem;
+}
+@media screen and (min-width: 1200px) {
+    .hero__title h1{
+        font-size: 4rem;
+    }
+    .hero__title span{
+        font-size: 7rem;
+    }
+    .hero__description{
+        width: 70%;
+        max-width: var(--max-width);
+    }
+    .hero__description p{
+        font-size: 1.5rem;
+        color: var(--light-gray-color);
+    }
+    .hero__socials{
+        margin-top: -1rem ;
+    }
 }
