@@ -9,7 +9,7 @@
     --gray-complementary-color: #3a3a3a;
     --font-family: 'Raleway', sans-serif;
     --font-paragraphs: 1.2rem;
-    --max-width: 1400px;
+    --max-width: 1200px;
     --header-height: 70px;
     --background: #3C729D;
     /* Responsive Breakpoints */
@@ -66,85 +66,56 @@ li{
     max-width: var(--max-width);
     margin: auto;
 }
-.background__color{
-    background: var(--first-color);
+.display__none{
+    display: none;
 }
+
 
 /* *** Navbar *** */
 .header{
-    background: var(--first-color);
-
+    background: var(--background);
+    height: 10rem;
 }
 .header__container{
-    padding: 1rem;
+    padding: 0 1rem;
     justify-content: space-between;
 }
-.header__logo{
+.header__logo h3{
     color: var(--white-color);
-    text-transform: capitalize;
-    letter-spacing: 5px;     
-    cursor: pointer;  
+    font-size: 4rem;
+}
+.header__menu--btn i{
+    font-size: 2.5rem;
+    font-style: normal;
+    color: var(--white-color);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 500ms;
+}
+.header__menu--btn:hover.header__menu--btn i{
+    background: var(--white-color);
+    color: var(--first-color);
 }
 .header__nav{
-    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 10rem;
+    background: var(--background);
 }
 .header__nav a{
     font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
     color: var(--white-color);
-    padding: 1rem;
-    border-radius: 2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
     transition: all 500ms;
 }
 .header__nav a:hover{
-    color: var(--first-color);
     background: var(--white-color);
-}
-
-/* *** hero section *** */
-.hero{
-    height: 50vh;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-}
-.hero__title h1{
-    font-size: 4.5rem;
-    color: var(--white-color);
-    letter-spacing: 2px;
-}
-.hero__title span{
-    font-size: 7rem;
-}
-.hero__description{
-    max-width: var(--max-width);
-    color: var(--light-gray-color);
-    font-size: 1.6rem;
-    text-align: center;
-}
-.hero__socials {
-    gap: 1rem;
-}
-.hero__socials h3{
-    color: var(--white-color);
-    font-size: 3rem;
-    font-weight: normal;
-}
-.hero__socials a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white-color);
-    font-weight: bold;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    transition: all 300ms; 
-}
-.hero__socials a:hover{
     color: var(--first-color);
-    background: var(--white-color);
 }
-
