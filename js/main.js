@@ -20,4 +20,6 @@
             var scroll__header = document.querySelector(".header");
             scroll__header.classList.toggle("sticky__nav", window.scrollY > 0);
         })
+
+
     })(document);
