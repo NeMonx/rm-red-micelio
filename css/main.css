@@ -67,7 +67,7 @@ li{
     margin: auto;
 }
 .display__none{
-    display: none;
+    display: none!important;
 }
 
 
@@ -75,8 +75,10 @@ li{
 .header{
     background: var(--background);
     height: 10rem;
+    z-index: 999;
 }
 .header__container{
+    max-width: var(--max-width);
     padding: 0 1rem;
     line-height: 3rem;
     justify-content: space-between;
@@ -85,8 +87,14 @@ li{
     color: var(--white-color);
     font-size: 4rem;
 }
+
 .header__menu--btn i{
-    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
     font-style: normal;
     color: var(--white-color);
     padding: 1rem;
@@ -104,7 +112,14 @@ li{
     position: absolute;
     left: 0;
     top: 10rem;
-    background: var(--background);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 500ms;
+    z-index: 999;
+}
+.header__nav.is__nav--active{
+    pointer-events: auto;
+    opacity: 1;
 }
 .header__nav a{
     font-size: 2rem;
@@ -119,6 +134,31 @@ li{
 .header__nav a:hover{
     background: var(--white-color);
     color: var(--first-color);
+}
+.header__dropdown--btn{
+    cursor: pointer;
+}
+.dropdown__content{
+    display: flex;
+    flex-direction: column;
+    background: var(--white-color);
+    margin-bottom: 1rem;
+}
+.dropdown__content a{
+    width: 100%;
+    color: var(--first-color);
+    padding: 1rem;
+}
+.dropdown__content a:hover{
+    background: var(--light-gray-color);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .header__nav{
+        background: var(--first-color);
+        box-shadow: 2px 4px 10px -5px black;
+    }
 }
 @media screen and (min-width: 1200px) {
     .header{
@@ -136,9 +176,10 @@ li{
     .header__nav{
         flex-direction: row;
         justify-content: space-between;
-        background: var(--background);
         position: inherit;
         max-width: 70%;
+        pointer-events: auto;
+        opacity: 1;
     }
     .header__nav a{
         font-size: 2rem;
@@ -154,6 +195,43 @@ li{
     .header__nav a:hover{
         background: var(--white-color);
         color: var(--first-color);
+    }
+    .dropdown__content{
+        position: absolute;
+        top: 7rem;
+        left: calc(100% - 20%);
+    }
+    .dropdown__content a{
+        width: 100%;
+        color: var(--first-color);
+        padding: 1rem;
+        border-radius: 0%;
+    }
+    .dropdown__content a:hover{
+        background: var(--light-gray-color);
+    }
+    .header__dropdown--btn:hover{
+        background: transparent!important;
+        color: var(--white-color)!important;
+    }
+    .header.sticky__nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--white-color);
+        box-shadow: .1rem .1rem 2rem -.5rem black;
+    }
+    .header.sticky__nav .header__logo h3 {
+        color: var(--first-color);
+    }
+
+    .header.sticky__nav .header__nav a{
+        color: var(--first-color);
+    }
+    .header.sticky__nav .header__nav a:hover{
+        color: var(--white-color);
+        background: var(--first-color);
     }
 }
 
@@ -194,11 +272,14 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .hero__socials h3{
     color: var(--white-color);
     font-weight: normal;
     font-size: 3rem;
+    margin: .7rem;
+
 }
 .hero__socials a i{
     width: 5rem;
@@ -209,6 +290,17 @@ li{
     border-radius: 50%; 
     color: var(--white-color);
     font-size: 3rem;
+}
+.hero__socials a i:hover{
+    color: var(--first-color);
+    background: var(--white-color);
+}
+.hero__waves{
+    max-width: 100%;
+    position: relative;
+    bottom: 1rem;
+    left: 0;
+    transform: rotate(180deg);
 }
 @media screen and (min-width: 1200px) {
     .hero__title h1{
