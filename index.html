@@ -21,95 +21,74 @@
 </head>
 <body>
     
-    
     <header class="header">
-        <section class="container flex header__container">
-            <div class="logo flex header__logo ">
-                <h3>Red Micelio</h3>
-            </div>
-            <div class="header__menu--btn">
-                <i class="fa-solid fa-bars-staggered"></i>
-                <i class="fa-solid fa-xmark display__none"></i>
-            </div>
-            <nav class="header__nav flex">
-                <a href="#">Inicio</a>
-                <a href="#">Tienda</a>
-                <a href="#">¿Quiénes Somos?</a>
-                <a href="#">Investigación</a>
-                <a href="#">Contáctanos</a>
-
-                <a class="header__dropdown--btn">
-                    <i class="fa-solid fa-user"></i> <i class="fa fa-caret-down"></i>
-                </a>
-                <div class="dropdown__content display__none">
-                  <a href="#">Iniciar Sesión <i class="fa-solid fa-right-to-bracket"></i></a>
-                  <a href="#">Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+        <div class="header__container flex">
+            <nav class="header__container--nav flex">
+                <div class="header__container--logo">
+                    <h2>red micelio</h2>
                 </div>
-    
-
+                <ul class ="flex">
+                    <li><a href="#" class="underline nav__active">inicio</a></li>
+                    <li><a href="#" class="underline">tienda</a></li>
+                    <li><a href="#" class="underline">contáctanos</a></li>
+                    <li><a href="#" class="underline">sobre nosotros</a></li>
+                    <li><a href="#" class="underline">nuestra investigación</a></li>
+                </ul>
             </nav>
-
-        </section>
+            <div class="header__container--user-options">
+                <a href="#" class="btn__login" data-replace="Log In"><span>Log In</span></a>
+            </div>
     </header>
     <main>
-        <section class="hero background__color flex">
-            <div class="hero__title">
-                <h1>Bienvenidos a <br>
-                <span>Red Micelio</span></h1>
-            </div>
-            <div class="hero__description">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus neque adipisci architecto eligendi vero nobis voluptatibus deserunt ipsa nemo odit!</p>
-            </div>
-            <div class="hero__socials">
-                <h3>Siguenos en</h3>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-            </div>
+        <section class="hero__container flex">
+            <article class="hero__container--section">
+                <div class="hero__content">
+                    <h1>Bienvenidos a<br><span>Red Micelio</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis quos, corporis ab cum doloribus consequatur. Totam hic quos ea vitae voluptatibus? Recusandae, cum impedit?</p>
+                </div>
+            </article>
+            <article class="hero__container--section">
+                <img src="img/hero__image.svg" alt="undraw.co search Friendchip" class="hero__img">
+            </article>
         </section>
-        <svg class="hero__waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#3C729D" fill-opacity="1" d="M0,32L48,64C96,96,192,160,288,165.3C384,171,480,117,576,85.3C672,53,768,43,864,42.7C960,43,1056,53,1152,69.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
 
+        <section class="red__container">
+            <article class="grid__gallery">
 
+            </article>
+        </section>
     </main>
-
-
-    <svg class="footer__waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3C729D" fill-opacity="1" d="M0,32L48,37.3C96,43,192,53,288,96C384,139,480,213,576,218.7C672,224,768,160,864,149.3C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     <footer class="footer">
         <section class="footer__container flex">
-            <div class="footer__container--section">
-                <h2>Red Micelio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti, ipsum id facilis aliquid sed blanditiis magnam facere! Molestias, amet!</p>
-            </div>
-            <div class="footer__container--section">
-                <h3>Conéctate con la Red</h3>
-                <ul>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                </ul>
-            </div>
-            <div class="footer__container--section">
-                <h3>Sobre la Red</h3>
-                <ul>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                    <li><a href="">Lorem, ipsum dolor.</a></li>
-                </ul>
-            </div>
-            <div class="footer__container--section">
-                <h3>Nuestras Redes Sociales</h3>
-                <ul>
-                    <li><a href="">Siguenos en <i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="">Siguenos en <i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="">Siguenos en <i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="">Siguenos en <i class="fa-brands fa-youtube"></i></a></li>
-                </ul>
-            </div>
+            <article class="footer__container--section">
+                <h3>Red Micelio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolore ducimus doloremque quasi sequi aut nesciunt mollitia natus ad? Quia mollitia cumque reprehenderit provident repudiandae vitae incidunt odio ad voluptatibus.</p>
+            </article>
+            <article class="footer__container--section">
+                <h3>Lorem, ipsum dolor.</h3>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+            </article>
+            <article class="footer__container--section">
+                <h3>Lorem, ipsum dolor.</h3>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+                <a href="" class="underline">Lorem, ipsum dolor.</a>
+            </article>
+            <article class="footer__container--section ">
+                <h3>Lorem, ipsum dolor.</h3>
+                <a href="#" class="footer__redes"><i class="fa-brands fa-facebook"></i> Siguenos en Facebook</a>
+                <a href="#" class="footer__redes"><i class="fa-brands fa-instagram"></i> Siguenos en instagram</a>
+                <a href="#" class="footer__redes"><i class="fa-brands fa-twitter"></i> Siguenos en twitter</a>
+                <a href="#" class="footer__redes"><i class="fa-brands fa-discord"></i> Unete a nuestro discord</a>
+            </article>
         </section>
+        <div class="copyright__container flex">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
