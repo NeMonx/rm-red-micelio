@@ -187,12 +187,13 @@ li{
     background-color: var(--first-color);
     background-image: url(/img/hero__bubble-1.svg), url(/img/hero__bubble-2.svg), url(/img/hero__bubble-3.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: left 0vw bottom 40vh, left 60vw bottom 50vh, left 10vw top 65vh ;
+    background-position: left 0vw bottom 30vh, left 60vw bottom 30vh, left -25vw top 20vh ;
     width: 100%;
     margin: auto;
-    height: 90vh;
-    padding: 4rem
+    height: 70vh;
+    padding: 4rem;
 }
+
 
 .hero__container--section{
     max-width: 50%;
@@ -226,6 +227,103 @@ li{
 }
 /* *** Grid gallery empresas*** */
 
+.red__container{
+    width: var(--max-width);
+    margin: 4rem auto;
+}
+.red__container h3{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--first-color);
+    letter-spacing: 2px;
+}
+
+.grid__gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.card{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2rem;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card__socials{
+    position: relative;
+    bottom: 15rem;
+    left: -3rem;
+}
+.card__socials ul{
+    display: flex;
+    gap: 1rem;
+}
+.card__socials ul li{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--first-color);
+}
+.card__socials ul li a{
+    font-size: 2.5rem;
+    color: var(--white-color);
+}
+.card__socials ul li:nth-child(1){
+    background-color: #3B5998;
+}
+.card__socials ul li:nth-child(2){
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    
+}
+.card__socials ul li:nth-child(3){
+    background-color: #00acee;
+}
+
+.card__description{
+    position: inherit;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--first-color);
+}
+.card__description h3{
+    position: inherit;
+    left: 1rem;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: var(--white-color);
+}
+.card__description p{
+    position: inherit;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+.card__description a{
+    padding: 1rem;
+    font-weight: bold;
+    background-color: var(--white-color);
+    color: var(--first-color);
+    font-size: 1.7rem;
+    transition: all 500ms;
+}
+.card__description a:hover{
+    background: var(--light-gray-color);
+}
+
+
+
 
 
 
@@ -235,6 +333,7 @@ li{
     padding: 4rem;
     margin: auto;
     justify-content: space-between;
+    background-color: #fff;
 }
 .footer__container--section{
     display: flex;
